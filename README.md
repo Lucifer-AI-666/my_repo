@@ -1,37 +1,95 @@
-# Angular
+# my_repo
 
-This directory is a brief example of an [Angular](https://angular.io/) app that can be deployed to Vercel with zero configuration.
+An [Angular](https://angular.io/) web application deployed on [Vercel](https://vercel.com/).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
+🌐 **Live site:** https://myrepo-neon-iota.vercel.app
 
-## Deploy Your Own
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.
 
-Deploy your own Angular project with Vercel.
+## Repository Overview
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/angular&template=angular)
+| Item | Details |
+|------|---------|
+| **Framework** | Angular 15 |
+| **Language** | TypeScript 4.8 |
+| **Styling** | CSS |
+| **Testing** | Karma + Jasmine |
+| **Deployment** | Vercel |
 
-_Live Example: https://angular-template.vercel.app_
+## Project Structure
 
-## Development server
+```
+my_repo/
+├── src/
+│   ├── app/
+│   │   ├── app.component.ts        # Root component
+│   │   ├── app.component.html      # Root template
+│   │   ├── app.component.css       # Root styles
+│   │   ├── app.component.spec.ts   # Unit tests
+│   │   ├── app.module.ts           # App module
+│   │   └── app-routing.module.ts   # Routing
+│   ├── assets/                     # Static assets
+│   ├── index.html                  # Entry HTML
+│   ├── main.ts                     # Bootstrap
+│   └── styles.css                  # Global styles
+├── angular.json                    # Angular CLI config
+├── package.json                    # Dependencies & scripts
+├── tsconfig.json                   # TypeScript config
+└── README.md
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Available Scripts
 
-## Code scaffolding
+| Command | Description |
+|---------|-------------|
+| `npm start` | Start the development server at `http://localhost:4200` |
+| `npm run build` | Build for production (output to `dist/`) |
+| `npm test` | Run unit tests via Karma |
+| `npm run watch` | Build in watch mode for development |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
+Navigate to `http://localhost:4200/`. The app reloads automatically when source files change.
+
+## Code Scaffolding
+
+```bash
+# Generate a new component
+ng generate component component-name
+
+# Other generators: directive, pipe, service, class, guard, interface, enum, module
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+ng build
+```
 
-## Running unit tests
+Build artifacts are stored in the `dist/` directory.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Running Tests
 
-## Running end-to-end tests
+```bash
+ng test
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Runs unit tests via [Karma](https://karma-runner.github.io).
 
-## Further help
+## Deployment
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This app is automatically deployed to Vercel on every push to `main`.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/angular&template=angular)
+
+## Further Help
+
+To get more help on the Angular CLI use `ng help` or check out the [Angular CLI Overview and Command Reference](https://angular.io/cli).
