@@ -1,37 +1,104 @@
-# Angular
+# my_repo — Angular 15 Starter Application
 
-This directory is a brief example of an [Angular](https://angular.io/) app that can be deployed to Vercel with zero configuration.
+This repository contains an **Angular 15** single-page application generated with the [Angular CLI](https://github.com/angular/angular-cli) (version 15.0.x). It is configured for deployment to [Vercel](https://vercel.com) with zero extra configuration.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
+## Project structure
 
-## Deploy Your Own
+```
+my_repo/
+├── src/
+│   ├── app/
+│   │   ├── app.component.css          # Root component styles (empty)
+│   │   ├── app.component.html         # Root component template (default Angular welcome page)
+│   │   ├── app.component.spec.ts      # Unit tests for the root component
+│   │   ├── app.component.ts           # Root component class (title = 'angular-test')
+│   │   ├── app.module.ts              # Root NgModule (BrowserModule + AppRoutingModule)
+│   │   └── app-routing.module.ts      # Router module (no routes defined yet)
+│   ├── assets/                        # Static assets folder
+│   ├── favicon.ico                    # App favicon
+│   ├── index.html                     # HTML shell (<app-root> entry point)
+│   ├── main.ts                        # Application bootstrap
+│   └── styles.css                     # Global styles (empty)
+├── angular.json                       # Angular CLI workspace configuration
+├── package.json                       # NPM dependencies and scripts
+├── tsconfig.json                      # Base TypeScript configuration
+├── tsconfig.app.json                  # TypeScript config for the app build
+├── tsconfig.spec.json                 # TypeScript config for unit tests
+└── .editorconfig                      # Editor formatting rules
+```
 
-Deploy your own Angular project with Vercel.
+## Key technologies
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/angular&template=angular)
+| Technology | Version |
+|---|---|
+| Angular | ^15.0.0 |
+| TypeScript | ~4.8.2 |
+| RxJS | ~7.5.0 |
+| Karma + Jasmine | unit testing |
+| Angular CLI | ~15.0.0 |
 
-_Live Example: https://angular-template.vercel.app_
+## Getting started
 
-## Development server
+### Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Development server
+
+```bash
+npm start          # or: ng serve
+```
+
+Navigate to `http://localhost:4200/`. The application reloads automatically when source files change.
+
+## Available scripts
+
+| Command | Description |
+|---|---|
+| `npm start` | Start the development server |
+| `npm run build` | Build the app for production (output: `dist/`) |
+| `npm run watch` | Build in watch mode (development configuration) |
+| `npm test` | Run unit tests via [Karma](https://karma-runner.github.io) |
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Use the Angular CLI to generate new building blocks:
+
+```bash
+ng generate component component-name
+ng generate directive|pipe|service|class|guard|interface|enum|module
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+ng build
+```
+
+Build artifacts are stored in the `dist/angular-test/` directory.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+ng test
+```
 
-## Running end-to-end tests
+Executes the unit tests via [Karma](https://karma-runner.github.io).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Lucifer-AI-666/my_repo)
+
+The project is pre-configured for Vercel. Push to your connected branch and Vercel will build and deploy automatically.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Angular CLI documentation](https://angular.io/cli)
+- [Angular documentation](https://angular.io/docs)
